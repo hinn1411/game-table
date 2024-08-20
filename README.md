@@ -1,50 +1,62 @@
-# React + TypeScript + Vite
+# React Game Table 
+This is my personal work which used to demonstrate my ability to develope UI components
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Table of contents
 
-Currently, two official plugins are available:
+- [React Game Table](#react-game-table)
+  - [Table of contents](#table-of-contents)
+  - [Overview](#overview)
+    - [The challenge](#the-challenge)
+    - [Requirements](#requirements)
+    - [Screenshot](#screenshot)
+    - [Links](#links)
+  - [My process](#my-process)
+    - [Built with](#built-with)
+  - [Author](#author)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
+## Overview
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### The challenge
 
-- Configure the top-level `parserOptions` property like this:
+Implementing a table component by using React
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+### Requirements
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+- The table should display Name, Release Date, Status of the game
+- The app could add new game to existing table 
+- The app could support deleting game entries
+- The app could delete games
+- The app should support filter and search features
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+### Screenshot
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+![My work](./public/preview.png)
+
+
+### Links
+- Live Site URL: [game-table-gamma.vercel.app](game-table-gamma.vercel.app)
+
+## My process
+- Designing project folder
+- Defining HTML structure
+- Styling with TailwindCSS
+- Handling input errors
+- Integrating with Mock API Server
+- Optimizing performance with React Hooks
+
+### Built with
+
+- HTML
+- TailwindCSS
+- HeadlessUI
+- React Hook Form
+- Zod
+- Mock API
+- Custom Hook
+
+
+
+## Author
+
+- Giang Tuan Hien
